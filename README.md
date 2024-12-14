@@ -82,12 +82,7 @@ This project involves developing a web application for daily mental health check
    npm install
    ```
 
-3. Start the database:
-   ```bash
-   docker-compose up
-   ```
-
-4. Start the backend and frontend servers:
+3. Start the backend and frontend servers:
    ```bash
    # In /backend
    npm run dev
@@ -96,7 +91,7 @@ This project involves developing a web application for daily mental health check
    npm start
    ```
 
-5. Access the application at `http://localhost:5173`.
+4. Access the application at `http://localhost:5173`.
 
 ### Challenges
 - **Sentiment Analysis Accuracy**:
