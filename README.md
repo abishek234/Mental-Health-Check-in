@@ -96,7 +96,7 @@ This project involves developing a web application for daily mental health check
    npm start
    ```
 
-5. Access the application at `http://localhost:3000`.
+5. Access the application at `http://localhost:5173`.
 
 ### Challenges
 - **Sentiment Analysis Accuracy**:
