@@ -1,0 +1,163 @@
+.checkin-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px; /* Reduced padding for smaller screens */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out; 
+    margin-left: 430px;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em; /* Responsive font size */
+}
+
+.checkin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between form elements */
+    width: 350px;
+}
+
+.form-group {
+    margin-bottom: 20px; 
+    width: 320px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none; 
+    width: 100%;
+    height: 8px; 
+    background: #ddd;
+    border-radius: 5px; 
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none; 
+    width: 20px;
+    height: 20px; 
+    background-color: #007bff; 
+    border-radius: 50%; 
+}
+
+input[type='number'], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    min-height: 80px; /* Minimum height for textarea */
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #007bff; 
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.submit-button:hover {
+    background-color: #0056b3; 
+}
+
+@keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+}
+
+.overlay-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Close button styles */
+.close-button {
+    padding: 10px;
+    background-color: #007bff; 
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button:hover {
+   background-color:#0056b3; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+   .checkin-container {
+       padding: 15px; /* Adjust padding for tablets and smaller screens */
+ 
+       margin: 0 auto;
+       margin-left: 150px;
+   }
+
+   h2 {
+       font-size: 1.5em; /* Smaller font size for smaller screens */
+   }
+
+   .form-group {
+       margin-bottom: 15px; /* Reduced margin for smaller screens */
+   }
+   
+   .submit-button, .close-button {
+       width: auto; /* Allow buttons to resize */
+       padding-left :20px ;
+       padding-right :20px ;
+   }
+}
+
+@media (max-width: 480px) {
+   .checkin-container {
+       padding :10px ; /* Further reduced padding for mobile devices */
+       margin: 0 auto;
+         margin-left: 50px;
+   }
+
+   h2 {
+       font-size :1.2em ; /* Even smaller font size for mobile */
+   }
+
+   input[type='range']::-webkit-slider-thumb {
+       width :15px ; /* Smaller slider thumb on mobile */
+       height :15px ;
+   }
+
+   input[type='number'], textarea,
+   .submit-button,
+   .close-button {
+       font-size :14px ; /* Smaller font size for inputs and buttons on mobile */
+   }
+}
