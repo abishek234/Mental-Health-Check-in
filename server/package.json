@@ -13,6 +13,7 @@
   "dependencies": {
     "node-cron": "^3.0.3",
     "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.9",
     "sentiment": "^5.0.2",
     "twilio": "^5.3.7"
   }
