@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:9000/api'; 
+const API_URL = 'https://mental-health-check-in-1.onrender.com/api'; 
 
 export const registerUser = async (userData) => {
     return await axios.post(`${API_URL}/auth/register`, userData);
